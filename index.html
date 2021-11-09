@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Reptile Hotel Website" />
+		<meta name="description" content="Reptile hotel Site" />
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,148 +17,348 @@
 			integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
 			crossorigin="anonymous"
 		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<title><h2>Reptile Hotel</h2></title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Reptile Hotel | Home</title>
 	</head>
+
 	<body>
+		<!-- HEADER ELEMENT  the header is collapsible using Boot strap 4-->
 		<header>
-			<div class="containerfluud header-image-home">
+			<div class="container-fluid header-img">
 				<div class="row">
-					<div class="col">
-						<nav class="navbar">
-							<a href="index.html">Home</a>
-							<a href="gallery.html">Gallery</a>
-							<a href="contact.html">Contact Us</a>
+					<div class="col col-lg-12">
+						<!-- NAV SECTION -->
+						<nav class="navbar navbar-dark navbar-expand-lg">
+							<a href="index.html" class="navbar-brand">
+								<h1 class="logo-text">Reptile Hotel</h1>
+							</a>
+							<button
+								class="navbar-toggler ml-auto collapsed"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarNavDropdown"
+								aria-controls="navbarNavDropdown"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span
+									><i
+										class="fa fa-bars"
+										aria-hidden="true"
+									></i>
+								</span>
+							</button>
+
+							<div
+								class="navbar-collapse collapse"
+								id="navbarNavDropdown"
+							>
+								<ul class="nav ml-auto">
+									<li class="nav-item">
+										<a
+											href="index.html"
+											class="
+												nav-link
+												nav-active
+												nav-active-border
+											"
+											>Home</a
+										>
+									</li>
+									<li class="nav-item">
+										<a href="gallery.html" class="nav-link"
+											>Gallery</a
+										>
+									</li>
+									<li class="nav-item">
+										<a href="contact.html" class="nav-link"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</div>
 						</nav>
-						<h3>The NorthEasts Number One Reptile Specialist</h3>
-						<a href="contact.html" class="button bnt">Contact us</a>
+					</div>
+					<div class="call-to-action">
+						<div class="col col-sm-12 text-color-white">
+							<h3>
+								The North-Easts number one Reptile Specialist
+							</h3>
+							<a class="btn button" href="contact.html">
+								Contact Us!
+							</a>
+						</div>
+					</div>
+					<div class="text-color-white">
+						<a
+							class="header-extra-link d-none d-xl-block"
+							href="https://en.wikipedia.org/wiki/Pogona"
+							target="_blank"
+							rel="noreferrer"
+							>Bearded Dragon (Click for more info...)</a
+						>
 					</div>
 				</div>
 			</div>
 		</header>
+
 		<!-- this Chevron is used to indicate more content below -->
 		<div class="chevron text-center">
 			<i class="fa fa-chevron-down mt-2 mb-4" aria-hidden="true"></i>
 		</div>
 
-		<section class="section-13-years">
-			<img
-				src="./assets/images/chameleon.png"
-				alt="Image of a chameleon"
-			/>
-			<h3>Thirteen years and counting.</h3>
-			<p>
-				The Reptile Hotel opened its doors back in 2008 in South
-				Shields, as a family-owned business as it is today. Back in 2008
-				when we opened our first store we never expected to grow into
-				the business that it is today. You will find our store stocks
-				some of the most popular pet reptiles alongside all their
-				environmental needs. Education is important to us, our store
-				based in Gateshead is family friendly and we are always more
-				than happy to let you get hands-on where possible. So as we like
-				to say come and meet the reptiles today!
-			</p>
-		</section>
-		<section class="section-services">
-			<div class="row">
-				<div class="col">
-					<h4>Live Food</h4>
-					<p>
-						We Stock a range of live feeds freshly delivered each
-						Tuesday and Friday. From Dubia Roaches to Meal Worms, we
-						have it all, if your looking to treat your favorite
-						reptile, let us know what your after. If we don't have
-						it in well order it especially for your scaly friend.
-					</p>
-
-					<h4>Health Checks</h4>
-					<p>
-						We offer free Health checks and grooming for your pet,
-						just give us a call to book an appointment We know some
-						aspects of reptile care can be a little scary, What sex
-						is it? is it healthy? how to I Clip these nails?
-					</p>
-					<h4>Reptile Sales</h4>
-					<p>
-						With a range of Reptiles for sale we get them from only
-						the best local breeders. We regularly receive some of
-						the best Snakes, Geckos and many other exotic reptiles.
-					</p>
-					<h4>Boarding</h4>
-					<p>
-						With a range of Reptiles for sale we get them from only
-						the best local breeders. We regularly receive some of
-						the best Snakes, Geckos and many other exotic reptiles.
-					</p>
-				</div>
-			</div>
-		</section>
-		<section class="section-reviews">
-			<div class="row">
-				<div class="col">
-					<img src="./assets/images/review1.jpg" alt="Reviewer one" />
-					<blockquote>
-						"Thanks for the great service." - Normie Y
-					</blockquote>
-				</div>
-				<div class="col">
-					<img src="./assets/images/review2.jpg" alt="Reviewer Two" />
-					<blockquote>
-						"Your company is truly upstanding and is behind its
-						product 100%." - Cathleen E.
-					</blockquote>
-				</div>
-				<div class="col">
-					<img src="./assets/images/review3.jpg" alt="Reviewer 3" />
-					<blockquote>
-						"We've used Reptile Hotel for the last five years.
-						Reptile Hotel has really helped our pet." - Ernie U.
-					</blockquote>
-				</div>
-				<div class="col">
-					<img src="./assets/images/review4.jpg" alt="Reviewer 4" />
-					<blockquote>
-						"Just what I was looking for. I was amazed at the
-						quality of Reptile Hotel." - Grace J.
-					</blockquote>
-				</div>
-			</div>
-		</section>
-
-		<footer>
+		<!--The company history section of the website-->
+		<section class="history-section">
 			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-2 col-lg-6 col-xl-6">
+						<img
+							class="
+								mx-auto
+								d-none d-xs-none d-sm-none d-md-none d-lg-block
+							"
+							id="chameleon-img"
+							src="assets/images/chameleon.png"
+							alt="Chameleon"
+						/>
+					</div>
+					<div class="col-sm-12 col-md-8 col-lg-5 col-xl-4">
+						<h4 class="text-center">Thirteen years and counting</h4>
+						<p class="text-justify">
+							The Reptile Hotel opened its doors back in 2008 in
+							South Shields, as a family-owned business as it is
+							today. Back in 2008 when we opened our first store
+							we never expected to grow into the business that it
+							is today. You will find our store stocks some of the
+							most popular pet reptiles alongside all their
+							environmental needs. Education is important to us,
+							our store based in Gateshead is family friendly and
+							we are always more than happy to let you get
+							hands-on where possible. So as we like to say come
+							and meet the reptiles today!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services section -->
+		<section class="services-section">
+			<div class="container">
 				<div class="row">
 					<div class="col">
+						<h4 class="text-center mt-4">What We Do!"</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-11 col-md-12 col-lg-6 mt-4">
+						<h4 class="text-center mt-1">
+							<i
+								class="fa fa-paw fonticon"
+								aria-hidden="true"
+							></i>
+							Live Food
+						</h4>
+
+						<p class="text-justify mt-3">
+							We Stock a range of live feeds freshly delivered
+							each Tuesday and Friday. From Dubia Roaches to Meal
+							Worms, we have it all, if your looking to treat your
+							favorite reptile, let us know what your after. If we
+							don't have it in well order it especially for your
+							scaly friend.
+						</p>
+					</div>
+					<div class="col-sm-11 col-md-12 col-lg-6 mt-4">
+						<h4 class="text-center">
+							<i
+								class="fa fa-heartbeat fonticon"
+								aria-hidden="true"
+							></i>
+							Health Checks
+						</h4>
+
+						<p class="text-justify mt-3">
+							We offer free Health checks and grooming for your
+							pet, just give us a call to book an appointment We
+							know some aspects of reptile care can be a little
+							scary, What sex is it? is it healthy? how to I Clip
+							these nails?
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-11 col-md-12 col-lg-6 mt-4">
+						<h4 class="text-center">
+							<i
+								class="fa fa-shopping-cart fonticon"
+								aria-hidden="true"
+							></i>
+							Reptile Sales
+						</h4>
+
+						<p class="text-justify mt-3">
+							With a range of Reptiles for sale we get them from
+							only the best local breeders. We regularly receive
+							some of the best Snakes, Geckos and many other
+							exotic reptiles.
+						</p>
+					</div>
+
+					<div class="col-sm-11 col-md-12 col-lg-6 mt-4">
+						<h4 class="text-center">
+							<i
+								class="fa fa-bed fonticon"
+								aria-hidden="true"
+							></i>
+							Boarding
+						</h4>
+
+						<p class="text-justify mt-3">
+							Going on Holiday? We're the Number one trusted
+							border in our area. We regularly see the same pets
+							annually, Our customers know that we always go the
+							extra mile for our guest, We feed them on the same
+							schedule and give them the same love and care you do
+							at home.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Customer Reviews-->
+
+		<section class="reviews-section">
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col">
+						<h3 class="text-center">What our customers say!</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-sm-12 col-md-6 mt-4 review-card align-middle"
+					>
+						<img
+							src="./assets/images/review1.jpg"
+							alt="photo of male customer"
+							class="review-img"
+						/>
+						<div class="overlay">
+							<blockquote class="blockquote">
+								<p
+									class="
+										text-justify text-right
+										mt-3
+										review-text
+									"
+								>
+									"Thanks for the great service." - Normie Y
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 mt-4 review-card">
+						<img
+							src="./assets/images/review2.jpg"
+							alt="photo of female customer"
+							class="review-img"
+						/>
+						<div class="overlay">
+							<blockquote class="blockquote">
+								<p
+									class="
+										text-justify text-right
+										mt-3
+										review-text
+									"
+								>
+									"Your company is truly upstanding and is
+									behind its product 100%." - Cathleen E.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 mt-2 review-card">
+						<img
+							src="./assets/images/review3.jpg"
+							alt="photo of male customer"
+							class="review-img"
+						/>
+						<div class="overlay">
+							<blockquote class="blockquote">
+								<p
+									class="
+										text-justify text-right
+										mt-3
+										review-text
+									"
+								>
+									"We've used Reptile Hotel for the last five
+									years. Reptile Hotel has really helped our
+									pet." - Ernie U.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 mt-2 review-card">
+						<img
+							src="./assets/images/review4.jpg"
+							alt="photo of female customer"
+							class="review-img"
+						/>
+						<div class="overlay">
+							<blockquote class="blockquote">
+								<p
+									class="
+										text-justify text-right
+										mt-3
+										review-text
+									"
+								>
+									"Just what I was looking for. I was amazed
+									at the quality of Reptile Hotel." - Grace J.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PAGE FOOTER -->
+		<footer class="footer-section text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 align-middle">
 						<address>
 							<p>Durham Road</p>
 							<p>Gateshead</p>
 							<p>Birtley</p>
 							<p>DH32PG</p>
-							<p>
-								<a href="tel:+44191411135" class="footer-links"
-									>0191 411 1 35</a
-								>
-							</p>
-							<p>
-								<a
-									href="mailto:Hello@thereptilehotel.com"
-									class="footer-links footer-email"
-									>Hello@thereptilehotel.com</a
-								>
-							</p>
+
+							<a href="tel:+44191411135" class="footer-links"
+								>0191 411 1 35</a
+							>
+
+							<a
+								href="mailto:Hello@thereptilehotel.com"
+								class="footer-links footer-email"
+								>Hello@thereptilehotel.com</a
+							>
 						</address>
 					</div>
-					<div class="col">
+					<div class="col-sm-12 col-md-2">
 						<ul class="social-list">
 							<li>
 								<a
 									href="https://www.facebook.com/reptilehotel"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<i
 										class="fa fa-facebook-square"
@@ -170,6 +370,7 @@
 								<a
 									href="https://twitter.com/?lang=en-gb"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<i
 										class="fa fa-twitter-square"
@@ -181,6 +382,7 @@
 								<a
 									href="https://www.instagram.com/thereptilehotel/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<i
 										class="fa fa-instagram"
@@ -190,7 +392,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-sm-12 col-md-6">
 						<iframe
 							title="Map to Reptile Hotel"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.5030307711813!2d-1.5795641839788124!3d54.89409266535542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e7bbaf4906b17%3A0xae767782270106f9!2sThe%20Reptile%20Hotel!5e0!3m2!1sen!2suk!4v1615312178047!5m2!1sen!2suk"
@@ -202,14 +404,33 @@
 						></iframe>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 text-color-white mt-2">
-					<div class="copyright">
-						&#169; 2021 Reptile Hotel - All Rights Reserved.
+
+				<div class="row">
+					<div class="col-sm-12 mt-2">
+						<div class="copyright">
+							&#169; 2021 Reptile Hotel - All Rights Reserved.
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<!-- Scripts used by bootstrap 4 -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
+git ac ""

@@ -1,4 +1,4 @@
-# MileStone 1 Project (Reptile Hotel)
+# Reptile Hotel
 
 
 Based (with information and permissions to use there brand) on a local reptile specialist pet shop [Reptile Hotel](http://www.thereptilehotel.co.uk/).
@@ -106,5 +106,3 @@ W3 Schools- Ued to refresh my memory on elements and styling
 
 - the Reptile Hotel its self for permission to base my project on them.
 - I received inspiration for [IHS](https://www.ihs-web.org.uk/) the international Herpetological Society.
-
-- I would like to acknowledge the help and guidance provided by my Mentor Antonija Simic.

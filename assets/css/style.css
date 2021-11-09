@@ -1,0 +1,361 @@
+/* ---------------- IMPORTS -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ---------------- Variables -------------- */
+:root {
+	--green: #8db04c;
+	--nav-link-color: rgba(255, 255, 255, 0.9);
+	--text-color-white: #fff;
+}
+
+/* ---------------- Utilities  -------------- */
+/*(Classes used buy multiple elements on multiple pages)*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+/* Overriding the Boot strap 4 nav text colour */
+
+.text-color-white {
+	color: var(--text-color-white);
+}
+
+.button {
+	border: 2px solid var(--green);
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: var(--text-color-white);
+	transition: transform 0.3s ease-in-out;
+}
+
+.button-black {
+	border: 2px solid var(--green);
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: black;
+	transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+	transform: scale(0.9);
+}
+
+.button-black:hover {
+	transform: scale(0.9);
+	color: var(--text-color-white);
+}
+
+.header-extra-link {
+	position: absolute;
+	right: 5%;
+	bottom: 10%;
+	color: var(--nav-link-color);
+	font-size: 14px;
+}
+
+.chevron {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------- HOMEPAGE -------------- */
+/* ---------------- HEADER -------------- */
+/* this section contained the header and nav styles, 
+Here we set the background image and  the positioning of the elements int he header. we also set a custom navbar toggle to override the bootstrap class*/
+
+.header-img {
+	background-image: url('../images/bearded-dragon.png');
+	background-position: center center;
+	height: 95vh;
+	background-size: cover;
+}
+
+.header-img h1 {
+	color: var(--nav-link-color);
+}
+
+.call-to-action {
+	position: absolute;
+	bottom: 150px;
+	left: 50px;
+}
+
+.navbar .navbar-toggler {
+	border: 0;
+	color: var(--nav-link-color);
+	z-index: 2;
+	margin-bottom: 10px;
+}
+
+.nav-link {
+	color: var(--nav-link-color) !important;
+	font-size: 15px;
+	font-weight: 400;
+	border-bottom: 2px solid transparent;
+}
+
+.nav-active-border {
+	border-bottom: 2px solid var(--green);
+}
+
+.navbar ul {
+	border-bottom: 2px solid var(--green);
+	border-bottom-color: transparent;
+}
+
+.navbar ul a:hover {
+	margin: 0;
+	border-bottom-color: var(--green);
+	transition: border-bottom-color 0.5s ease-in-out;
+}
+
+/* ---------------- HOMEPAGE HISTORY -------------- */
+
+.history-section {
+	margin-bottom: 3rem;
+}
+
+/* ---------------- HOMEPAGE SERVICES -------------- */
+/* this section adds a background color using the variable from the top of the file and changes the size of the font awesome Icons*/
+
+.services-section {
+	background-color: var(--green);
+	padding: 2rem 0;
+}
+
+.fonticon {
+	margin: 0;
+	font-size: 50px;
+}
+
+/* ---------------- HOMEPAGE REVIEWS -------------- */
+/* The review section contains an overlay style tat shows on hover 
+	reviews section is the container for the overlay
+*/
+
+.review-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	object-fit: cover;
+}
+
+.review-card {
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.review-card:hover .overlay {
+	opacity: 0.6;
+}
+
+.review-text {
+	color: white;
+	position: absolute;
+	bottom: 3%;
+	right: 3%;
+	text-align: end;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 15px;
+	right: 15px;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: var(--green);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer-section {
+	background-color: var(--green);
+	padding: 3rem;
+}
+
+.social-list {
+	list-style-type: none;
+}
+
+.social-list li a {
+	font-size: 50px;
+	color: black;
+}
+
+.social-list li a:hover {
+	color: white;
+}
+
+.footer-links {
+	color: black;
+	text-decoration: none;
+}
+
+.footer-links:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* ---------------- GALLERY PAGE---------------- */
+
+.gallery-header-img {
+	background-image: url('../images/gallery-header.png');
+	background-position: center center;
+	height: 95vh;
+	background-size: cover;
+}
+
+.gallery-section {
+	position: relative;
+}
+
+.gallery-section img {
+	height: auto;
+	width: auto;
+	margin: 2rem 0;
+	object-fit: cover;
+	-webkit-box-shadow: 7px 6px 22px -6px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 7px 6px 22px -6px rgba(0, 0, 0, 0.75);
+	box-shadow: 7px 6px 22px -6px rgba(0, 0, 0, 0.75);
+}
+
+.gallery-text {
+	background-color: rgba(0, 0, 0, 0.6);
+	justify-items: center;
+	color: var(--text-color-white);
+	padding: 1px 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 22px;
+	right: 22px;
+}
+
+/* ---------------- GALLERY PAGE---------------- */
+
+.contact-header-img {
+	background-image: url('../images/gecko.png');
+	background-position: center center;
+	height: 99vh;
+	background-size: cover;
+}
+
+/* CONTACT PAGE */
+
+#contactform {
+	margin: 2rem 5rem;
+	font-weight: 600;
+}
+
+.form-control {
+	color: var(--text-color-white);
+	background-color: rgba(255, 255, 255, 0.13);
+	border: 0px;
+	outline: none;
+	border-bottom: solid 3px var(--green);
+}
+
+.form-control:focus {
+	outline: none;
+	color: var(--text-color-white);
+	background: transparent;
+}
+
+.modal-content {
+	height: 250px;
+	width: 500px;
+	position: absolute;
+	left: calc(50% - 250px);
+	top: 100px;
+	border: 3px solid var(--green);
+	border-radius: 15px;
+}
+
+.modal-header,
+.modal-body {
+	border: none;
+}
+
+#modalclose {
+	margin-bottom: 0.5rem;
+}
+
+.modalheader {
+	margin: 0 auto;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Styled so devices classed as small and extra small the Social media Icon display in a row and not column */
+
+@media screen and (max-width: 600px) {
+	.modal-content {
+		height: 300px;
+		width: 250px;
+		position: absolute;
+		left: calc(50% - 125px);
+		top: 100px;
+		border: 3px solid var(--green);
+		border-radius: 15px;
+	}
+
+	.social-list {
+		display: flex;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.footer-section {
+		padding: 1rem 0;
+	}
+
+	.logo-text {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.social-list {
+		display: flex;
+	}
+
+	.social-list li {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	footer iframe {
+		width: 99%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.gallery-text {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-height: 350px) {
+	#contactform {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	textarea {
+		height: 50px;
+	}
+
+	.footer-section {
+		height: 90vh;
+	}
+}
+
+@media screen and (max-height: 670px) {
+	.footer-section iframe {
+		display: none;
+	}
+}
